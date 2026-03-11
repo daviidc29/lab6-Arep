@@ -187,16 +187,32 @@ This command ensures that the project builds cleanly and that the configured lif
 
 # Deployment
 
-Example deployment flow on an EC2 instance:
+![alt text](img/image-20.png)
 
-```bash
-sudo apt update
-sudo apt install openjdk-21-jdk maven git -y
-git clone https://github.com/daviidc29/lab6-Arep
-cd lab6-Arep
-mvn clean package
-java -cp target/classes com.co.edu.escuelaing.lab6.MicroSpringBootG4 com.co.edu.escuelaing.lab6.HelloController /hello
-```
+![alt text](img/image-18.png)
+
+This image should prove that the application was deployed on AWS infrastructure.
+
+This image should prove that the application was compiled and executed on the remote server.
+
+![alt text](img/image-12.png)
+
+
+![alt text](img/image-13.png)
+
+![alt text](img/image-14.png)
+
+![alt text](img/image-15.png)
+
+![alt text](img/image-16.png)
+
+![alt text](img/image-17.png)
+
+![alt text](img/image-19.png)
+
+
+These images should prove that the reflective framework worked correctly after deployment.
+
 
 # Built With
 
