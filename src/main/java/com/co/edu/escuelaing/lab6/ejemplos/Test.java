@@ -9,7 +9,3 @@ import java.lang.annotation.ElementType;
 @Target(ElementType.METHOD)
 public @interface Test {
 }
-
-public class Test {
-
-}

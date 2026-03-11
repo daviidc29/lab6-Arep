@@ -7,17 +7,17 @@ import com.co.edu.escuelaing.lab6.RestController;
 public class HelloController {
 
 	@GetMapping("/")
-	public static String index() {
+	public String index() {
 		return "Greetings from Spring Boot!";
 	}
 
-    @GetMapping("/pi")
-	public static String getPi() {
+	@GetMapping("/pi")
+	public String getPi() {
 		return "PI=" + Math.PI;
 	}
 
-    @GetMapping("/hello")
-	public static String getHello() {
+	@GetMapping("/hello")
+	public String getHello() {
 		return "Hello World!";
 	}
 }

@@ -1,13 +1,14 @@
 package com.co.edu.escuelaing.lab6;
 
 import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.ElementType;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
-public @interface GetMapping {
-    public String value();
+@Target(ElementType.PARAMETER)
+public @interface RequestParam {
+    String value();
 
+    String defaultValue() default "";
 }
